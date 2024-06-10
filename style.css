@@ -1,0 +1,136 @@
+@font-face {
+    font-family: 'Mermaid Babies';
+    src: url('fonts/MermaidBabies.otf');
+}
+html {
+    font-size: 20px;
+}
+body {
+    margin: 0;
+    font-family: 'Mermaid Babies', 'Calibri', sans-serif;
+}
+header {
+    background-color: #4c9ba4;
+    display: flex;
+    justify-content: space-around;
+}
+header h1 {
+    color: white;
+    margin: 0;
+    font-weight: 100;
+    font-size: 1.5rem;
+    letter-spacing: 0.1rem;
+}
+header>a {
+    text-decoration: none;
+}
+#navigation {
+    min-width: 40%;
+    max-width: 60%;
+}
+#navigation ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0;
+    column-gap: 5%;
+    text-wrap: nowrap;
+    margin: 0;
+    height: 100%;
+}
+#navigation a {
+    text-decoration: none;
+    color: white;
+    font-weight: 100;
+    font-size: 1.2rem;
+    letter-spacing: 0.05rem;
+    padding: 1rem 0 1rem 0;
+    transition: color 0.5s ease-in-out;
+}
+#navigation a:hover {
+    color: #ffccff;
+}
+main {
+    background-image: url('img/Unicorns.png');
+    background-size: cover;
+    background-position: center;
+    height: 87vh;
+    background-repeat: no-repeat;
+    width: 100%;
+}
+#licornes {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    width: 100%;
+    height: 100%;
+}
+#licornes img {
+    width: 80%;
+    border-radius: 10%;
+}
+#licornes figure {
+    text-align: center;
+    width: 20%;
+    line-height: 1.8rem;
+}
+#licornes h2 {
+    margin: 0;
+    color: #4c9ba4;
+    font-weight: 100;
+}
+.description {
+    padding: 0;
+    font-family: Arial, Calibri, sans-serif;
+    font-size: 0.8rem;
+    text-align: left;
+    line-height: 1.2rem;
+    text-wrap: nowrap;
+}  
+@media screen and (max-width: 900px) {
+    html {
+        font-size: 18px;
+    }
+    #licornes img {
+        width: 100%;
+    }
+    .description {
+        font-size: 0.7rem;
+    }
+}
+@media screen and (max-width: 720px) {
+    main {
+        height: max-content;
+        background-size: 200%;
+        background-position: top;
+    }
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+    #navigation {
+        min-width: 100%;
+        max-width: 100%;
+    }
+    #navigation ul{
+        flex-direction: column;
+        width: 100%;
+        margin-bottom: 1rem;
+    }
+    #navigation li {
+        width: 100%;
+    }
+    #licornes {
+        height: max-content;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+    #licornes figure {
+        width: 40%;
+    }
+
+
+}
